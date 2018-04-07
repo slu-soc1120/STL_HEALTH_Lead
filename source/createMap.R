@@ -37,7 +37,7 @@ base <- ggplot() +
   labs(
     title = "High Blood Lead Level Tests",
     subtitle = "Children in St. Louis, MO (2010-2015)",
-    caption = "Data via Reuters \nMap via Christopher Prener, Ph.D."
+    caption = "Data via Reuters \nMap by Christopher Prener, Ph.D."
   ) 
 
 ## map 1 - ggplot2 theme
