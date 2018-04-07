@@ -9,6 +9,10 @@
 ### Abstract
 These data come from [Reuters' reporting on lead posioning](https://www.reuters.com/investigates/special-report/usa-lead-testing/), which was released in 2016. This repository contains maps for St. Louis as well as a histogram, both showing the percent of children in each census tract with elevated blood lead level test results between 2010 and 2015.
 
+### Preview
+
+![](/results/maps/map02-clean_white.png)
+
 ### Related Readings
 * [Unsafe at Any Level](https://www.reuters.com/investigates/special-report/usa-lead-testing/) - original Reuters' article
 * [Sampson and Winter 2016](https://www.cambridge.org/core/journals/du-bois-review-social-science-research-on-race/article/racial-ecology-of-lead-poisoning/F39AF4724258606DCC1CDA369DC08707)
