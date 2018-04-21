@@ -29,10 +29,16 @@ base <- ggplot() +
 plot1 <- base +
   theme_gray(base_size = 28)
 
-cp_plotSave(filename = "results/plots/histogram01-default.png", plot = plot1, preset = "lg", dpi = 500)
+cp_plotSave(filename = "results/plots/leadHistogram-base.png", plot = plot1, preset = "lg", dpi = 500)
 
-## plot 2 - sequoia theme
+## plot 2 - sequoia theme with white background
 plot2 <- base +
-  cp_sequoiaTheme()
+  cp_sequoiaTheme(background = "white")
 
-cp_plotSave(filename = "results/plots/histogram02-prener.png", plot = plot2, preset = "lg", dpi = 500)
+cp_plotSave(filename = "results/plots/leadHistogram-white.png", plot = plot2, preset = "lg", dpi = 500)
+
+## plot 3 - sequoia theme with gray background
+plot3 <- base +
+  cp_sequoiaTheme(background = "gray")
+
+cp_plotSave(filename = "results/plots/leadHistogram-gray.png", plot = plot3, preset = "lg", dpi = 500)

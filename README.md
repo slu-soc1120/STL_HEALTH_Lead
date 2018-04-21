@@ -7,10 +7,16 @@
 [![](https://img.shields.io/github/repo-size/slu-soc1120/STL_HEALTH_Lead.svg)](https://github.com/slu-soc1120/STL_HEALTH_Lead/)
 
 ### Abstract
-This repository contains a map image of census tracts in St. Louis, Missouri, colored by the estimated number of high blood lead tests over the 2010-2015 period. Unlike adults, who tend to be exposed to lead in the workplace, childrens' exposures tend to be enviornmental through their homes or schools. The CDC's "level of concern" for a high test is [5 micrograms per deciliter](https://www.cdc.gov/nceh/lead/acclpp/lead_levels_in_children_fact_sheet.pdf) of lead in blood. These data were obtained from Reuters' reporting on this topic. I use this map on the first day of class for introducing major themes, for teaching about race and health, and for discussing urban health issues.
+This repository contains a map image of census tracts in St. Louis, Missouri, colored by the estimated number of high blood lead tests over the 2010-2015 period. The repository also contains a variety of plots describing high lead exposure in St. Louis and two demographic correlates - race and poverty. 
+
+Unlike adults, who tend to be exposed to lead in the workplace, childrens' exposures tend to be enviornmental through their homes or schools. The CDC's "level of concern" for a high test is [5 micrograms per deciliter](https://www.cdc.gov/nceh/lead/acclpp/lead_levels_in_children_fact_sheet.pdf) of lead in blood. 
+
+These data were obtained from Reuters' reporting on this topic. I use this map on the first day of class for introducing major themes, for teaching about race and health, and for discussing urban health issues.
 
 ### Preview
 ![](results/maps/leadMap-trans.png)
+
+![](results/plots/raceScatter-white.png)
 
 ### Related Readings
 * [Unsafe at Any Level](https://www.reuters.com/investigates/special-report/usa-lead-testing/) - original Reuters' article
