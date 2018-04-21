@@ -7,11 +7,11 @@
 [![](https://img.shields.io/github/repo-size/slu-soc1120/STL_HEALTH_Lead.svg)](https://github.com/slu-soc1120/STL_HEALTH_Lead/)
 
 ### Abstract
-These data come from [Reuters' reporting on lead posioning](https://www.reuters.com/investigates/special-report/usa-lead-testing/), which was released in 2016. This repository contains maps for St. Louis as well as a histogram, both showing the percent of children in each census tract with elevated blood lead level test results between 2010 and 2015. Additionally, scatter plots are included that show the percent of children with elevated blood lead level test results compared to the percentage of African American residents and poverty levels in each census tract.
+
 
 ### Preview
 
-![](/results/maps/map02-clean_white.png)
+
 
 ### Related Readings
 * [Unsafe at Any Level](https://www.reuters.com/investigates/special-report/usa-lead-testing/) - original Reuters' article

@@ -25,14 +25,16 @@ lead <- read_csv("data/STL_HEALTH_Lead.csv",
 ## table join
 map <- left_join(tracts, lead, by = c("GEOID" = "geoID"))
 
+## calculate jenks natural breaks
+map <- cp_breaks(map, var = pctElevated, newvar = jenksElevated, classes = 5, style = "jenks")
+
 ## base map
 base <- ggplot() + 
-  geom_sf(data = map, mapping = aes(fill = cut_number(pctElevated, n = 5, 
-          labels = c("0.00 - 4.25", "4.25 - 7.45", "7.45 - 10.90", "10.90 - 16.00", "16.00 - 23.30"))),
-          color = NA) + 
+  geom_sf(data = map, mapping = aes(fill = jenksElevated), color = NA) + 
   geom_sf(data = highway, mapping = aes(color = "Highways"), size = 1.5, fill = NA) +
   geom_sf(data = city, fill = NA, color = "#000000", size = .25) +
-  scale_fill_brewer(palette = "RdPu", name = "% Elevated") +
+  scale_fill_brewer(palette = "RdPu", name = "% Elevated",
+                    labels = c("0.00 - 5.24", "5.25 - 8.82", "8.83 - 12.70", "12.71 - 17.70", "17.71 - 23.30")) +
   scale_colour_manual(name="", values= "black") +
   labs(
     title = "High Blood Lead Level Tests",
@@ -41,31 +43,21 @@ base <- ggplot() +
   ) 
 
 ## map 1 - ggplot2 theme
-map1 <- base + 
+map01 <- base + 
   theme_gray(base_size = 24) + 
   theme(plot.caption = element_text(hjust = "0"))
 
-cp_plotSave(filename = "results/maps/map01-default.png", plot = map1, preset = "lg", dpi = 500)
+cp_plotSave(filename = "results/maps/leadMap-base.png", plot = map01, preset = "lg", dpi = 500)
 
-## map 2 - ggpthemes theme_map
-map2 <- base + 
-  theme_map(base_size = 24) + 
-  theme(
-    plot.background = element_rect(color = "white"),
-    legend.position = "right",
-    plot.caption = element_text(hjust = "0")
-  ) 
+## map 2 - sequoia theme with white background
+map02 <- base + 
+  cp_sequoiaTheme(background = "white", base_size = 24, map = TRUE)
 
-cp_plotSave(filename = "results/maps/map02-clean_white.png", plot = map2, preset = "lg", dpi = 500)
+cp_plotSave(filename = "results/maps/leadMap-white.png", plot = map02, preset = "lg", dpi = 500)
 
 
-## map 3 - ggpthemes theme_map with transparent background
-map3 <- base + 
-  theme_map(base_size = 24) + 
-  theme(
-    legend.background = element_rect(colour = NA, fill = NA),
-    legend.position = "right",
-    plot.caption = element_text(hjust = "0")
-  ) 
-
-cp_plotSave(filename = "results/maps/map03-clean_trans.png", plot = map3, preset = "lg", dpi = 500)
+## map 3 - sequoia theme with transparent background
+map03 <- base + 
+  cp_sequoiaTheme(background = "transparent", base_size = 24, map = TRUE)
+  
+cp_plotSave(filename = "results/maps/leadMap-trans.png", plot = map03, preset = "lg", dpi = 500)
