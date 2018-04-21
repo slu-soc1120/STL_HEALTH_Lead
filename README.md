@@ -5,6 +5,7 @@
 [![](https://img.shields.io/github/release/slu-soc1120/STL_HEALTH_Lead.svg?label=version)](https://github.com/slu-soc1120/STL_HEALTH_Lead/releases)
 [![](https://img.shields.io/github/last-commit/slu-soc1120/STL_HEALTH_Lead.svg)](https://github.com/slu-soc1120/STL_HEALTH_Lead/commits/master)
 [![](https://img.shields.io/github/repo-size/slu-soc1120/STL_HEALTH_Lead.svg)](https://github.com/slu-soc1120/STL_HEALTH_Lead/)
+[![DOI](https://zenodo.org/badge/128544391.svg)](https://zenodo.org/badge/latestdoi/128544391)
 
 ### Abstract
 This repository contains a map image of census tracts in St. Louis, Missouri, colored by the estimated number of high blood lead tests over the 2010-2015 period. The repository also contains a variety of plots describing high lead exposure in St. Louis and two demographic correlates - race and poverty. 
