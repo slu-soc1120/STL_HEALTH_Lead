@@ -17,8 +17,8 @@ lead <- read_csv("data/STL_HEALTH_Lead.csv",
 
 ## base scatterplot 
 base <- ggplot(data = lead, mapping = aes(x = (povertyTot/totalPop)*100, y = pctElevated)) +
-  geom_smooth(method = lm, se = FALSE, color = "#017a04", size = 2) +
-  geom_point(color = "#7A0177", position = "jitter", size = 6) +
+  geom_smooth(method = lm, se = FALSE, color = "#D95F02", size = 2) +
+  geom_point(color = "#1B9E77", position = "jitter", size = 6) +
   geom_point(shape = 1, color = "black", size = 6) +
   labs(
     title = "High Blood Lead Level Tests and \nPoverty by Census Tract",
@@ -32,10 +32,17 @@ base <- ggplot(data = lead, mapping = aes(x = (povertyTot/totalPop)*100, y = pct
 plot1 <- base +
   theme_gray(base_size = 28)
 
-cp_plotSave(filename = "results/plots/scatter-poverty01-default.png", plot = plot1, preset = "lg", dpi = 500)
+cp_plotSave(filename = "results/plots/povertyScatter-base.png", plot = plot1, preset = "lg", dpi = 500)
 
-## plot 2 - sequoia theme
+## plot 2 - sequoia theme with white background
 plot2 <- base +
-  cp_sequoiaTheme()
+  cp_sequoiaTheme(background = "white")
 
-cp_plotSave(filename = "results/plots/scatter-poverty02-prener.png", plot = plot2, preset = "lg", dpi = 500)
+cp_plotSave(filename = "results/plots/povertyScatter-white.png", plot = plot2, preset = "lg", dpi = 500)
+
+## plot 3 - sequoia theme with gray background
+plot3 <- base +
+  cp_sequoiaTheme(background = "gray")
+
+cp_plotSave(filename = "results/plots/povertyScatter-gray.png", plot = plot3, preset = "lg", dpi = 500)
+
