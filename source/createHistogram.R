@@ -17,7 +17,7 @@ lead <- read_csv("data/STL_HEALTH_Lead.csv",
 
 ## base histogram
 base <- ggplot() +
-  geom_histogram(data = lead, mapping = aes(pctElevated), fill = "#7A0177", bins = 30) +
+  geom_histogram(data = lead, mapping = aes(pctElevated), fill = "#7570B3", bins = 30) +
   labs(
     title = "High Blood Lead Level Tests by Census Tract",
     subtitle = "Children in St. Louis, MO (2010-2015)",
