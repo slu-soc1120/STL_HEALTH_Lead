@@ -7,15 +7,17 @@
 [![](https://img.shields.io/github/repo-size/slu-soc1120/STL_HEALTH_Lead.svg)](https://github.com/slu-soc1120/STL_HEALTH_Lead/)
 
 ### Abstract
-
+This repository contains a map image of census tracts in St. Louis, Missouri, colored by the estimated number of high blood lead tests over the 2010-2015 period. Unlike adults, who tend to be exposed to lead in the workplace, childrens' exposures tend to be enviornmental through their homes or schools. The CDC's "level of concern" for a high test is [5 micrograms per deciliter](https://www.cdc.gov/nceh/lead/acclpp/lead_levels_in_children_fact_sheet.pdf) of lead in blood. These data were obtained from Reuters' reporting on this topic. I use this map on the first day of class for introducing major themes, for teaching about race and health, and for discussing urban health issues.
 
 ### Preview
-
-
+![](results/maps/leadMap-trans.png)
 
 ### Related Readings
 * [Unsafe at Any Level](https://www.reuters.com/investigates/special-report/usa-lead-testing/) - original Reuters' article
 * [Sampson and Winter 2016](https://www.cambridge.org/core/journals/du-bois-review-social-science-research-on-race/article/racial-ecology-of-lead-poisoning/F39AF4724258606DCC1CDA369DC08707)
+
+### Citing These Images
+This repository is associated with a [Digital Object Identifier](https://en.wikipedia.org/wiki/Digital_object_identifier) (or DOI). Please include the DOI when citing these images. You can find pre-formatted citations and a BibTeX entry, among other citation resources, on the associated [Zenodo release page]().
 
 ## About SOC 1120: Introduction to Sociology - Diversity and Health Emphasis
 ### Course Description
