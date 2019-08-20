@@ -15,9 +15,9 @@ Unlike adults, who tend to be exposed to lead in the workplace, childrens' expos
 These data were obtained from Reuters' reporting on this topic. I use this map on the first day of class for introducing major themes, for teaching about race and health, and for discussing urban health issues.
 
 ### Preview
-![](results/maps/leadMap-trans.png)
+![](results/lead_map.png)
 
-![](results/plots/raceScatter-white.png)
+![](results/lead_race.png)
 
 ### Related Readings
 * [Unsafe at Any Level](https://www.reuters.com/investigates/special-report/usa-lead-testing/) - original Reuters' article
